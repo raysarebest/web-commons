@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file demonstrates 3 different possible templates, as is the max for this file. For help on choosing a template, visit http://msdn.microsoft.com/en-us/library/ie/dn456348(v=vs.85).aspx -->
+<tile>
+  <!-- version="2" must be specified, as that's what Windows 8.1 (the only version of Windows that can pin website Live Tiles to the Start Screen) recognizes-->
+  <visual lang="en-US" version="2">
+    <!--The template="" attribute defines the template you're using. See the above linked site for help on choosing a template. The branding="" attribute can be set to name, logo, or none, and displays the branding of the site on the Live Tile accordingly-->
+    <binding template="TileSquare150x150PeekImageAndText04" branding="name">
+      <!--Each image tag must have a unique id="" attribute, with each value being one larger than the last. This specifies the order in which the images will be displayed-->
+      <image id="1" src="img/firstImage.jpg"/>
+      <!--Each text tag must have a unique id="" attribute, with each value being one higher than the other. This specifies the order in which the text will be displayed, the style of the text, and the image that the text corresponds to-->
+      <text id="1">First Image</text>
+    </binding>
+    <binding template="TileWide310x150ImageAndText01" branding="name">
+      <image id="1" src="img/firstImage.jpg"/>
+      <text id="1">First Image</text>
+    </binding>
+    <binding template="TileSquare310x310SmallImagesAndTextList01" branding="name">
+      <image id="1" src="img/firstImage.jpg"/>
+      <image id="2" src="img/secondImage.jpg"/>
+      <image id="3" src="img/thirdImage.jpg"/>
+      <text id="1">Title Text 1</text>
+      <text id="2">Body Text 1.1</text>
+      <text id="3">Body Text 1.2</text>
+      <text id="4">Title Text 2</text>
+      <text id="5">Body Text 2.1</text>
+      <text id="6">Body Text 2.2</text>
+      <text id="7">Title Text 3</text>
+      <text id="8">Body Text 3.1</text>
+      <text id="9">Body Text 3.2</text>
+    </binding>
+  </visual>
+</tile>
