@@ -45,11 +45,17 @@
   <link rel="author" href="mailto:bestraysfan@me.com"/>
   <!--The following tag specifies that a link appearing later in the document is going to an external site. You can probably just delete the tag and this comment, but if you want, you can change the href and the title (if you do, you'll probably want to make more)-->
   <link rel="external" title="example" href="example.com"/>
-  <!--This style tag corresponds with the meta name="viewport" tag near the top, but because Internet Explorer is both retarded and relatively widely used (*cries*), you need to include this in your CSS. You really should copy and paste this at the top of your linked CSS file, then remove the tag and this comment, but I'm including it here so I don't have to make a whole other file, and it's in here, just in case.-->
+  <!--This style tag corresponds with the meta name="viewport" tag near the top, but because Internet Explorer is both retarded and relatively widely used (*cries*), you need to include this in your CSS. This also includes some common CSS for prettifying navigation on webpages. You really should copy and paste this at the top of your linked CSS file, then remove the tag and this comment, but I'm including it here so I don't have to make a whole other file, and it's in here, just in case.-->
   <style>
     @-ms-viewport{
       width: device-width;
       height: device-height;
+    }
+    #navigation{
+      list-style: none;
+    }
+    #navigation li{
+      display: inline; 
     }
   </style>
   <!--The following line is to include jQuery. If you're developing locally, be sure to add https: before the //-->
