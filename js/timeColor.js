@@ -55,7 +55,7 @@ setInterval(function(){
 	var g = getRandomColorValue();
 	var b = getRandomColorValue();
 	if(r+g+b<383){
-		document.getElementsByTagName('HTML')[0].style.color="#dfdfdf";
+		document.getElementsByTagName('HTML')[0].style.color="#ccc";
 	}
 	else{
 		document.getElementsByTagName('HTML')[0].style.color="#000";
