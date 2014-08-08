@@ -63,8 +63,8 @@ setInterval(function(){
 	var color = RGBToHex(r,g,b);
 	document.getElementById('color').innerHTML=color;
 	document.getElementById('date').innerHTML=days[date.getDay()]+", "+months[date.getMonth()]+" "+date.getDate()+", "+date.getFullYear()+" "+hour("number")+":"+minutes()+":"+seconds()+" "+gmt[hour("ap")];
-	var rgb = "(rgb: " + r + ", " + g + ", " + b + ")";
+	var rgb = "(rgb: "+r+", "+g+", "+b+")";
 	document.getElementById('rgb').innerHTML=rgb;
 	document.getElementsByTagName('HTML')[0].style.background=color;
-	console.log(color + ", " + rgb);
+	console.log(color+", "+ rgb);
 }, 1000);
