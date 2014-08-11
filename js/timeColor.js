@@ -54,7 +54,7 @@ setInterval(function(){
 	var r = getRandomColorValue();
 	var g = getRandomColorValue();
 	var b = getRandomColorValue();
-	if(r+g+b<383){
+	if(r+g+b<383 && g<175){
 		document.getElementsByTagName('HTML')[0].style.color="#ccc";
 	}
 	else{
