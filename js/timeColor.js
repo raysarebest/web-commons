@@ -55,7 +55,7 @@ setInterval(function(){
 	var g = getRandomColorValue();
 	var b = getRandomColorValue();
 	if(r+g+b<383){
-		document.getElementsByTagName('HTML')[0].style.color="#dfdfdf";
+		document.getElementsByTagName('HTML')[0].style.color="#ccc";
 	}
 	else{
 		document.getElementsByTagName('HTML')[0].style.color="#000";
@@ -63,6 +63,8 @@ setInterval(function(){
 	var color = RGBToHex(r,g,b);
 	document.getElementById('color').innerHTML=color;
 	document.getElementById('date').innerHTML=days[date.getDay()]+", "+months[date.getMonth()]+" "+date.getDate()+", "+date.getFullYear()+" "+hour("number")+":"+minutes()+":"+seconds()+" "+gmt[hour("ap")];
+	var rgb = "(rgb: "+r+", "+g+", "+b+")";
+	document.getElementById('rgb').innerHTML=rgb;
 	document.getElementsByTagName('HTML')[0].style.background=color;
-	console.log(color);
+	console.log(color+", "+ rgb);
 }, 1000);
