@@ -1,4 +1,4 @@
-//This file is a template to use Local Notifications, as defined by the W3C to the fullest of its ability. It is wrapped inside of a function (notify(heading, message, uniqueTag)), so it can be called later
+//This file is a template to use Local Notifications, as defined by the W3C to the fullest of its ability. It is wrapped inside of a function (notify(title, body, tag, onshow, onclick, onclose, onerror)), so it can be called later
 function notify(title, body, tag, onshow, onclick, onclose, onerror){
   //First, we have to make sure that the title is a string
   if(typeof title != "string"){
